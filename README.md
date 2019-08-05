@@ -82,7 +82,6 @@ NSInteger add(int num1, int num2) {
   return num1 + num2;
 }
 
-
 // usage 
 NSInteger result = add(5, 4);
 NSLog(@"result of adding numbers is: %ld", result); // format specifier for int is %d
