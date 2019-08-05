@@ -49,3 +49,7 @@ if (isAwesome) { // parenthesis are REQUIRES in Obj-C unlike in Swift
 
 // My ♥️ is with Swift
 ```
+
+## Readiing Resource 
+
+[Apple - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1)
