@@ -1,7 +1,6 @@
-# Objective-C-Primer
-Objective-C Primer for Swift Developers.
+# Objective-C Primer for Swift Developers
 
-#### Printing 
+## Printing 
 
 **Objective-C** 
 ```objective-c
