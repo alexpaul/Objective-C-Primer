@@ -28,7 +28,7 @@ print("Hello, World")
 ## NSString
 
 ```objective-c
-NSString *message = @"Welcome to Objective-C";
+NSString *message = @"Welcome to Objective-C"; // oops yeah, ; semicolons are required to end a statement in Obj-C
 NSLog(@"%@", message);
 
 // Welcome to Objective-C
@@ -41,7 +41,7 @@ In Objective-C a * pointer is used to signify an object. An object requires spac
 ```objective-c 
 BOOL isAwesome = NO; // all equivalent, YES, TRUE, true, NO, FALSE, false
 
-if (isAwesome == TRUE) {
+if (isAwesome) { // parenthesis are REQUIRES in Obj-C unlike in Swift
   NSLog(@"Objective-C is awesome");
 } else {
   NSLog(@"My ♥️ is with Swift");
