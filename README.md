@@ -6,6 +6,30 @@ Wikepidia: The programming language Objective-C was originally developed in the 
 
 You will encounter the prefix **NS** used on types throughout Objective-C as a result of it being used at NeXTSTEP. A company that was started by Steve Jobs when he was ousted by Apple in the last 1980s. NeXTSTEP would be later acquired and Steve Jobs would rejoin Apple. The rest is history as we know it.....
 
+## Getting Starting with Objective-C as a Command-Line app 
+
+* Open up Xcode 
+* Navigate to File -> New -> Project
+* Select macOS Template and Command Line Tool 
+* Give the Project and Name 
+* For Language, select Objective-C, then create. 
+
+When your Project has been created, navigate to **main.m** This main file will be used as a "Playground" for tesing the Objective-C code snippets. The **main.m** file should be similar to the snippet below
+
+```objective-c 
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    
+    // code here
+    NSLog(@"Hello, World");
+    
+  }
+  return 0;
+}
+```
+
 ## Printing to the Console 
 
 **Objective-C** 
