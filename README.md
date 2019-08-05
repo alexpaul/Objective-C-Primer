@@ -25,6 +25,12 @@ print("Hello, World")
 * double 
 * BOOL 
 
+## Format Specifiers 
+
+> %@ object such as NSString
+> %d int, NSInteger
+> %f float
+
 ## NSString
 
 ```objective-c
@@ -45,6 +51,16 @@ NSLog(@"Currently learning %@", programmingStacks[1]);
 // Currently learning Objective-C
 ```
 
+## NSDictionary 
+
+```objective-c 
+NSDictionary *cites = @{@"Sweden": @"Stockholm", @"Japan": @"Tokyo", @"France": @"Paris"};
+NSString *city = cites[@"Japan"];
+NSLog(@"Capital city of Japan is %@", city);
+
+// Capital city of Japan is Tokyo
+```
+
 ## Control Flow 
 
 ```objective-c 
@@ -57,6 +73,21 @@ if (isAwesome) { // parenthesis are REQUIRED in Obj-C unlike in Swift
 }
 
 // My ♥️ is with Swift
+```
+
+## Functions 
+
+```objective-c
+NSInteger add(int num1, int num2) {
+  return num1 + num2;
+}
+
+
+// usage 
+NSInteger result = add(5, 4);
+NSLog(@"result of adding numbers is: %ld", result); // format specifier for int is %d
+
+// result of adding numbers is: 9
 ```
 
 ## Readiing Resource 
