@@ -18,6 +18,13 @@ NSLog(@"Hello, World");
 print("Hello, World") 
 ```
 
+## Some Primitive Types in Objective-C 
+
+* int 
+* float 
+* double 
+* BOOL 
+
 ## NSString
 
 ```objective-c
@@ -28,3 +35,15 @@ NSLog(@"%@", message);
 ```
 
 In Objective-C a * pointer is used to signify an object. An object requires space on the heap, there this * pointer is a location on the heap. Primitives e.g int, float are not objects on the heap and do not have this * in their declaration. 
+
+## Control Flow 
+
+```objective-c 
+BOOL isAwesome = NO; // all equivalent, YES, TRUE, true, NO, FALSE, false
+
+if (isAwesome == TRUE) {
+  NSLog(@"Objective-C is awesome");
+} else {
+  NSLog(@"My ♥️ is with Swift");
+}
+```
