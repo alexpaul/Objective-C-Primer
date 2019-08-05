@@ -26,3 +26,5 @@ NSLog(@"%@", message);
 
 // Welcome to Objective-C
 ```
+
+In Objective-C a * pointer is used to signify an object. An object requires space on the heap, there this * pointer is a location on the heap. Primitives e.g int, float are not objects on the heap and do not have this * in their declaration. 
