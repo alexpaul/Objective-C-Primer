@@ -11,3 +11,12 @@ NSLog(@"Hello, World");
 ```swift 
 print("Hello, World") 
 ```
+
+## NSString
+
+```objective-c
+NSString *message = @"Welcome to Objective-C";
+NSLog(@"%@", message);
+
+// Welcome to Objective-C
+```
