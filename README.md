@@ -11,7 +11,7 @@ You will encounter the prefix **NS** used on types throughout Objective-C as a r
 * Open up Xcode 
 * Navigate to File -> New -> Project
 * Select macOS Template and Command Line Tool 
-* Give the Project and Name 
+* Name the Project 
 * For Language, select Objective-C, then create. 
 
 When your Project has been created, navigate to **main.m** This main file will be used as a "Playground" for tesing the Objective-C code snippets. The **main.m** file should be similar to the snippet below
