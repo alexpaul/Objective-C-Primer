@@ -1,6 +1,6 @@
 # Objective-C Primer for Swift Developers
 
-## Printing 
+## Printing to the Console 
 
 **Objective-C** 
 ```objective-c
