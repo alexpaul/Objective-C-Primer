@@ -36,6 +36,15 @@ NSLog(@"%@", message);
 
 In Objective-C a * pointer is used to signify an object. An object requires space on the heap, there this * pointer is a location on the heap. Primitives e.g int, float are not objects on the heap and do not have this * in their declaration. 
 
+## NSArray 
+
+```objective-c 
+NSArray *programmingStacks = @[@"Swift", @"Objective-C", @"Python", @"C++", @"Java"];
+NSLog(@"Currently learning %@", programmingStacks[1]);
+
+// Currently learning Objective-C
+```
+
 ## Control Flow 
 
 ```objective-c 
