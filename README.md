@@ -27,9 +27,9 @@ print("Hello, World")
 
 ## Format Specifiers 
 
-> %@ object such as NSString
-> %d int, NSInteger
-> %f float
+> %@ object such as NSString  
+> %d int, NSInteger  
+> %f float  
 
 ## NSString
 
