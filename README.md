@@ -30,6 +30,8 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
+Run the Project and you should now see ```Hello, World``` printed in the console. 
+
 ## Printing to the Console 
 
 **Objective-C** 
