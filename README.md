@@ -41,7 +41,7 @@ In Objective-C a * pointer is used to signify an object. An object requires spac
 ```objective-c 
 BOOL isAwesome = NO; // all equivalent, YES, TRUE, true, NO, FALSE, false
 
-if (isAwesome) { // parenthesis are REQUIRES in Obj-C unlike in Swift
+if (isAwesome) { // parenthesis are REQUIRED in Obj-C unlike in Swift
   NSLog(@"Objective-C is awesome");
 } else {
   NSLog(@"My ♥️ is with Swift");
