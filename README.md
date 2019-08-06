@@ -223,7 +223,7 @@ let result = closureExample(num1: 10, num2: 5) { $0 * $1 }
 print(result) // 50
 ```
 
-#### Closures in Swift is similar to Blocks in Objective-C
+#### Blocks in Objective-C is similkart to Closures in Swift
 
 This Block does not take any parameters and does not return a value. 
 
@@ -251,6 +251,20 @@ int result = blockExample(7, 21);
 NSLog(@"result from block example calculation %d", result);
 
 // result from block example calculation 28
+```
+
+#### Passing Blocks as Parameters in Functions 
+
+Header file
+```objective-c 
+- (void)searchPodcast: (void (^)(NSError *, NSArray *))completionBlock;
+```
+
+Implementation file
+```objective-c 
+- (void)searchPodcast: (void (^) (NSError *, NSArray *))completionBlock {  
+  // code here
+}
 ```
 
 ## Enumerations
