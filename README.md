@@ -230,6 +230,33 @@ NSLog(@"result from block example calculation %d", result);
 // result from block example calculation 28
 ```
 
+## Enumerations
+
+```objective-c 
+typedef NS_ENUM(NSInteger, NetworkError) {
+  BadURL = 0,
+  BadStatusCode = 1,
+  APIError = 2
+};
+
+NetworkError networkError;
+networkError = BadStatusCode;
+switch (networkError) {
+  case BadURL:
+    NSLog(@"Bad URL");
+    break;
+  case BadStatusCode:
+    NSLog(@"Bad Status Code");
+    break;
+  case APIError:
+    NSLog(@"API Error");
+    break;
+}
+// above if a break is not used at the end of each case it will act a a "fallthrough" in Swift
+
+// Bad Status Code
+```
+
 ## Readiing Resource 
 
 [Apple - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1)   
