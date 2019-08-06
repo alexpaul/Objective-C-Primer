@@ -89,6 +89,7 @@ NSLog(@"Capital city of Japan is %@", city);
 
 ## Control Flow 
 
+#### if/else 
 ```objective-c 
 BOOL isAwesome = NO; // all equivalent, YES, TRUE, true, NO, FALSE, false
 
@@ -99,6 +100,33 @@ if (isAwesome) { // parenthesis are REQUIRED in Obj-C unlike in Swift
 }
 
 // My ♥️ is with Swift
+```
+
+#### C-Style for loop 
+```objective-c 
+for (int i = 0; i <= 10; i++) {
+  NSLog(@"%d", i);
+}
+
+/*
+0
+1
+.
+.
+10
+*/
+```
+
+#### for-in (fast-enumeration)
+```objective-c 
+NSArray *pursuitClasses = @[@"android", @"iOS", @"web"];
+for (NSString *pursuitClass in pursuitClasses) {
+  NSLog(@"This is the %@ class", pursuitClass);
+}
+
+// This is the android class
+// This is the iOS class
+// This is the web class
 ```
 
 ## Functions 
