@@ -35,7 +35,7 @@
   // can send message to nil if _apiClient is nil, won't cause a compiler crash like in Swift
   // this causes logic errors as in such an example searchPodcast would not be called as expected
   // forgetting that Objective-C does allow messages to be sent to a nil causes unnecessary debugging time
-  [self.apiClient searchPodcast:^(NSError *error, NSArray *podcasts) {
+  [self.apiClient searchPodcast:^(NSArray *podcasts, NSError *error) {
     if(error) {
       NSLog(@"error searching for podcasts: %@", error);
     } else {
