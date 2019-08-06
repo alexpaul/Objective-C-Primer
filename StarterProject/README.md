@@ -1,3 +1,3 @@
 # StarterProject
 
-The default command-line Objective-C application.
+A default Command Line application using Objective-C as the default language.
