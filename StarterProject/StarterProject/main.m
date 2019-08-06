@@ -1,8 +1,8 @@
 //
 //  main.m
-//  ObjectiveCPrimer
+//  StarterProject
 //
-//  Created by Alex Paul on 8/5/19.
+//  Created by Alex Paul on 8/6/19.
 //  Copyright © 2019 Alex Paul. All rights reserved.
 //
 
