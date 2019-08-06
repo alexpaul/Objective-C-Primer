@@ -1,5 +1,34 @@
 # iOS Objective-C Primer
 
+## Parsing JSON in Objective-C
+
+NSJSONSerialization class is used to parse JSON objects in Objective-C. At the top level it expects an NSArray or NSDictionary. 
+
+```objective-c
+  NSError *error;
+  NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+    if (!jsonDict) {
+          completionBlock(nil, error);
+  } else {
+    NSArray *results = jsonDict[@"results"];
+    NSMutableArray *podcasts = [[NSMutableArray alloc] init];
+    for (NSDictionary *podcastDict in results) {
+      Podcast *podcast = [[Podcast alloc] initWithDictionary:podcastDict];
+      [podcasts addObject:podcast];
+    }
+    completionBlock(podcasts, nil);
+  }
+```
+
+## Making Network calls in Objective-C with NSURLSession 
+
+```objective-c 
+  NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+  // code here
+  // see API Client below or the complete NetworkAPIExample Xcode project for complete implementation
+}
+```
+
 ## API Client 
 
 #### AppleSearchAPI.h 
