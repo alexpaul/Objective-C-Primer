@@ -14,6 +14,7 @@
 		570A588B22F9ECD10052ACE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570A588922F9ECD10052ACE4 /* LaunchScreen.storyboard */; };
 		570A588E22F9ECD10052ACE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 570A588D22F9ECD10052ACE4 /* main.m */; };
 		570A58B822F9F0520052ACE4 /* AppleSearchAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 570A58B722F9F0520052ACE4 /* AppleSearchAPI.m */; };
+		579E60CF22FA0B8F00D2C799 /* Podcast.m in Sources */ = {isa = PBXBuildFile; fileRef = 579E60CE22FA0B8F00D2C799 /* Podcast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		570A588D22F9ECD10052ACE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		570A58B622F9F03A0052ACE4 /* AppleSearchAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleSearchAPI.h; sourceTree = "<group>"; };
 		570A58B722F9F0520052ACE4 /* AppleSearchAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleSearchAPI.m; sourceTree = "<group>"; };
+		579E60CD22FA0B7700D2C799 /* Podcast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Podcast.h; sourceTree = "<group>"; };
+		579E60CE22FA0B8F00D2C799 /* Podcast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Podcast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +64,53 @@
 		570A587D22F9ECCC0052ACE4 /* NetworkAPIExample */ = {
 			isa = PBXGroup;
 			children = (
+				579E60CC22FA0B4A00D2C799 /* Network Services */,
+				579E60D022FA0B9400D2C799 /* Models */,
+				579E60CB22FA0B3B00D2C799 /* Controllers */,
+				579E60CA22FA0B1900D2C799 /* Supporting Files */,
+				570A588C22F9ECD10052ACE4 /* Info.plist */,
+			);
+			path = NetworkAPIExample;
+			sourceTree = "<group>";
+		};
+		579E60CA22FA0B1900D2C799 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				570A587E22F9ECCC0052ACE4 /* AppDelegate.h */,
 				570A587F22F9ECCC0052ACE4 /* AppDelegate.m */,
-				570A58B622F9F03A0052ACE4 /* AppleSearchAPI.h */,
-				570A58B722F9F0520052ACE4 /* AppleSearchAPI.m */,
-				570A588122F9ECCC0052ACE4 /* ViewController.h */,
-				570A588222F9ECCC0052ACE4 /* ViewController.m */,
 				570A588422F9ECCC0052ACE4 /* Main.storyboard */,
 				570A588722F9ECD10052ACE4 /* Assets.xcassets */,
 				570A588922F9ECD10052ACE4 /* LaunchScreen.storyboard */,
-				570A588C22F9ECD10052ACE4 /* Info.plist */,
 				570A588D22F9ECD10052ACE4 /* main.m */,
 			);
-			path = NetworkAPIExample;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		579E60CB22FA0B3B00D2C799 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				570A588122F9ECCC0052ACE4 /* ViewController.h */,
+				570A588222F9ECCC0052ACE4 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		579E60CC22FA0B4A00D2C799 /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				570A58B622F9F03A0052ACE4 /* AppleSearchAPI.h */,
+				570A58B722F9F0520052ACE4 /* AppleSearchAPI.m */,
+			);
+			path = "Network Services";
+			sourceTree = "<group>";
+		};
+		579E60D022FA0B9400D2C799 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				579E60CD22FA0B7700D2C799 /* Podcast.h */,
+				579E60CE22FA0B8F00D2C799 /* Podcast.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579E60CF22FA0B8F00D2C799 /* Podcast.m in Sources */,
 				570A588322F9ECCC0052ACE4 /* ViewController.m in Sources */,
 				570A58B822F9F0520052ACE4 /* AppleSearchAPI.m in Sources */,
 				570A588E22F9ECD10052ACE4 /* main.m in Sources */,

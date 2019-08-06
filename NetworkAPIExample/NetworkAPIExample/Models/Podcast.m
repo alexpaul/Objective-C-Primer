@@ -1,5 +1,5 @@
 //
-//  AppleSearchAPI.m
+//  Podcast.m
 //  NetworkAPIExample
 //
 //  Created by Alex Paul on 8/6/19.
@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AppleSearchAPI.h"
+#import "Podcast.h"
 
-@implementation AppleSearchAPI
+@implementation Podcast
 
-- (void)searchPodcast {
-  NSLog(@"searching podcast....."); 
+- (id)init:(NSDictionary *)dict {
+  self.collectionName = dict[@"collectionName"]; 
+  return self;
 }
 
 @end

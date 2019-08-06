@@ -10,7 +10,7 @@
 #import "AppleSearchAPI.h"
 
 @interface ViewController ()
-@property AppleSearchAPI *apiClient;
+@property AppleSearchAPI *apiClient; // in this @interface block apiClient is private (encapsulation)
 @end
 
 @implementation ViewController
