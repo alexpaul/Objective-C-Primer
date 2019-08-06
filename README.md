@@ -103,16 +103,41 @@ if (isAwesome) { // parenthesis are REQUIRED in Obj-C unlike in Swift
 
 ## Functions 
 
+#### C-Style Functions
 ```objective-c
-NSInteger add(int num1, int num2) {
+int add(int num1, int num2) {
   return num1 + num2;
 }
 
-// usage 
-NSInteger result = add(5, 4);
-NSLog(@"result of adding numbers is: %ld", result); // format specifier for int is %d
+// usage
+int result = add(5, 4);
+NSLog(@"result of adding numbers is: %d", result); // format specifier for int is %d
 
 // result of adding numbers is: 9
+```
+
+#### Objective-C Functions 
+
+Here we have an **@interface** declaration which acts as a template (later we will separate the @interface file in a .h file). Also we have an **@implementation** declaration that defines the function body (also we will be separating the @implementation file into a .m file)
+
+```objective-c 
+@interface ClassExample: NSObject
+- (NSString *) greeting:(NSString *)name;
+@end
+
+@implementation ClassExample
+- (NSString *)greeting:(NSString *)name {
+  NSString *newString = [NSString stringWithFormat:@"%@, hope you're enjoying all the [] bracket syntax in obj-c 😃", name];
+  return newString;
+}
+@end
+
+// usage 
+ClassExample *classInstance = [[ClassExample alloc] init];
+NSString *resultString = [classInstance greeting:@"Rachel"];
+NSLog(@"Modified string is %@", resultString);
+
+// Rachel, hope you're enjoying all the [] bracket syntax in obj-c 😃
 ```
 
 ## Readiing Resource 
