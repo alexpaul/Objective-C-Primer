@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AppleSearchAPI.h"
+#import "Podcast.h"
 
 @interface ViewController ()
 @property AppleSearchAPI *apiClient; // in this @interface block apiClient is private (encapsulation)
@@ -31,11 +32,18 @@
 }
 
 - (void)searchPodcast {
-  
   // can send message to nil if _apiClient is nil, won't cause a compiler crash like in Swift
   // this causes logic errors as in such an example searchPodcast would not be called as expected
   // forgetting that Objective-C does allow messages to be sent to a nil causes unnecessary debugging time
-  [self.apiClient searchPodcast];
+  [self.apiClient searchPodcast:^(NSError *error, NSArray *podcasts) {
+    if(error) {
+      NSLog(@"error searching for podcasts: %@", error);
+    } else {
+      for (Podcast *podcast in podcasts) {
+        NSLog(@"%@", podcast.collectionName);
+      }
+    }
+  }];
 }
 
 @end

@@ -9,7 +9,10 @@
 
 @interface Podcast : NSObject
 
+@property(nonatomic) NSNumber *collectionId;
+@property(copy) NSString *artistName;
 @property(copy) NSString *collectionName;
+@property(copy) NSString *artworkUrl600; 
 
 - (id)init:(NSDictionary *)dict; 
 

@@ -12,7 +12,10 @@
 @implementation Podcast
 
 - (id)init:(NSDictionary *)dict {
-  self.collectionName = dict[@"collectionName"]; 
+  self.collectionId = dict[@"collectionId"];
+  self.artistName = dict[@"artistName"];
+  self.collectionName = dict[@"collectionName"];
+  self.artworkUrl600 = dict[@"artworkUrl600"];
   return self;
 }
 
