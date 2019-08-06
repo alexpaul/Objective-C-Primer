@@ -57,6 +57,23 @@ print("Hello, World")
 > %d int, NSInteger  
 > %f float  
 
+```objective-c 
+// %@ example
+NSString *wwdc2019 = @"SwiftUI";
+NSLog(@"%@ was introduced at WWDC 2019", wwdc2019);
+// SwiftUI was introduced at WWDC 2019
+
+// %d example
+int olympics = 2020;
+NSLog(@"The next Summer Olympics will be held in %d", olympics);
+// The next Summer Olympics will be held in 2020
+
+// %f example
+float currentIOSClass = 5.3;
+NSLog(@"My current iOS class is %0.1f", currentIOSClass); // using %0.1f sets the float result to 1 decimal place
+// My current iOS class is 5.3
+```
+
 ## NSString
 
 ```objective-c
