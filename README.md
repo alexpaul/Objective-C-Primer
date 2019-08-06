@@ -275,6 +275,43 @@ NSLog(@"coordinate is %0.2f, %0.2f", coordinate.latitude, coordinate.longitude);
 // coordinate is 40.60, 73.34
 ```
 
+## Classes 
+
+As opposed to Swift in Objective-C one file does not hold the full class implementation. A full class in Objective-C are separated into two files, a header file (.m extension) and an implementation file (.h extension). 
+
+The header file is interface (template) for the methods, initializers of the class. The body of the methods are not implemented in the interface file. 
+
+The implementations details and method body logic are implemented in the .m file.  
+
+#### Header file 
+```objective-c 
+@interface User : NSObject
+
+// Properties
+@property (copy) NSString *username;
+
+// Methods: instance and class methods
+// class methods are prefixed with a +
+// instance is prefixed with a -
+- (void)userInfo;
+
+// Initializers
+
+@end
+```
+
+#### Implementation file 
+```objective-c 
+@implementation User
+
+- (void)userInfo {
+  NSLog(@"Current logged user is %@", _username);
+}
+
+@end
+```
+
+
 ## Readiing Resource 
 
 [Apple - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1)   
