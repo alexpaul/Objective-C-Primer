@@ -266,7 +266,7 @@ typedef struct {
 } Coordinate;
 
 
- Coordinate coordinate;
+Coordinate coordinate;
 coordinate.latitude = 40.6;
 coordinate.longitude = 73.345;
 
