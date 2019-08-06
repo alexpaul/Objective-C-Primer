@@ -142,6 +142,49 @@ NSLog(@"Modified string is %@", resultString);
 // Rachel, hope you're enjoying all the [] bracket syntax in obj-c 😃
 ```
 
+## Blocks in Objective-C (Closures in Swift) 
+
+#### Closures in Swift
+```swift 
+func closureExample(num1: Int, num2: Int,
+                    closure: (Int, Int) -> (Int)) -> Int {
+  return closure(num1, num2)
+}
+
+let result = closureExample(num1: 10, num2: 5) { $0 * $1 }
+print(result) // 50
+```
+
+#### Closures in Swift is similar to Blocks in Objective-C
+
+This Block does not take any parameters and does not return a value. 
+
+```objective-c 
+void(^sampleBlock)(void);
+
+sampleBlock = ^{
+  NSLog(@"You may know me as a closure in Swift, however in Objective-C I'm called a Block");
+};
+    
+sampleBlock();
+// You may know me as a closure in Swift, however in Objective-C I'm called a Block
+```
+
+The Block below takes two parameters of type int and returns an int value. 
+
+```objective-c 
+int(^blockExample)(int, int);
+
+blockExample = ^(int num1, int num2){
+  return num1 + num2;
+};
+    
+int result = blockExample(7, 21);
+NSLog(@"result from block example calculation %d", result);
+
+// result from block example calculation 28
+```
+
 ## Readiing Resource 
 
 [Apple - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1)   
