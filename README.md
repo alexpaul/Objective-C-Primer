@@ -189,7 +189,7 @@ NSLog(@"Modified string is %@", resultString);
 // Rachel, hope you're enjoying all the [] bracket syntax in obj-c 😃
 ```
 
-#### Sending messages to a nil Object (does NOT crash in Swift which leads to logic errors and debugging time)  
+#### Sending messages to a nil Object (does NOT crash in Objective-C which leads to logic errors and debugging time)  
 
 ```objective-c 
 - (void) initializeProperites {
