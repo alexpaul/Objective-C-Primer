@@ -11,6 +11,7 @@
 
 // Properties
 @property (copy) NSString *username;
+@property (readonly) NSDate *joinedDate;
 
 // Methods: instance and class methods
 // class methods are prefixed with a +

@@ -18,9 +18,28 @@ int main(int argc, const char * argv[]) {
     user.username = @"@objcProgrammer";
     
     // the syntax for (calling a method) is [instanceName methodName];
+    [user userInfo]; // Current logged user is @objcProgrammer
+    
+    
+    NSMutableString *mutatingString = [[NSMutableString alloc] initWithString:@"@randomUser"];
+    
+    user.username = mutatingString;
+    
+    
+    [user userInfo]; // Current logged user is @randomUser
+    
+    
+    [mutatingString appendString:@"Yoda"];
+    
     [user userInfo];
     
-    // output: Current logged user is @objcProgrammer
+    // if copy is not used on the username property
+    // output: Current logged user is @randomUserYoda
+    
+    // if copy is used on the username property, it's original copy is maintained
+    // output: Current logged user is @randomUser
+    
+    
   }
   return 0;
 }
