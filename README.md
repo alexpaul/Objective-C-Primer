@@ -312,7 +312,44 @@ The implementations details and method body logic are implemented in the .m file
 
 @end
 ```
-#### [ClassExample Xcode Project](https://github.com/alexpaul/Objective-C-Primer/tree/master/ClassExample)   
+#### [ClassExample Xcode Project](https://github.com/alexpaul/Objective-C-Primer/tree/master/ClassExample)  
+
+## Properties 
+
+#### readonly - property will not be allowed to change through the setter property
+```objective-c 
+@property (readonly) NSString *fullName;
+```
+
+#### readwrite - can read and write to this property - default property attribute, no need to specify this attribute
+```objective-c 
+@property (readwrite) NSString *username;
+```
+
+#### copy - the copy attribute allows the property to keep a copy of itself so it's not later mutated unintentionally
+```objective-c 
+// in header file
+@property (copy) NSString *firstName;
+
+// usage in main.m  
+NSMutableString *mutatingString = [[NSMutableString alloc] initWithString:@"@randomUser"];
+
+user.username = mutatingString;
+
+
+[user userInfo]; // Current logged user is @randomUser
+
+
+[mutatingString appendString:@"Yoda"];
+
+[user userInfo];
+
+// if copy is not used on the username property
+// output: Current logged user is @randomUserYoda
+
+// if copy is used on the username property, it's original copy is maintained
+// output: Current logged user is @randomUser
+```
 
 ## Readiing Resource 
 
