@@ -120,6 +120,8 @@ NSLog(@"result of adding numbers is: %d", result); // format specifier for int i
 
 Here we have an **@interface** declaration which acts as a template (later we will separate the @interface file in a .h file). Also we have an **@implementation** declaration that defines the function body (also we will be separating the @implementation file into a .m file)
 
+We will continue to visit classes in Objective-C later, for now this snippet makes use of a class called ClassExample in this Function illustration. 
+
 ```objective-c 
 @interface ClassExample: NSObject
 - (NSString *) greeting:(NSString *)name;
