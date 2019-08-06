@@ -5,19 +5,19 @@
 NSJSONSerialization class is used to parse JSON objects in Objective-C. At the top level it expects an NSArray or NSDictionary. 
 
 ```objective-c
-  NSError *error;
-  NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-    if (!jsonDict) {
-          completionBlock(nil, error);
-  } else {
-    NSArray *results = jsonDict[@"results"];
-    NSMutableArray *podcasts = [[NSMutableArray alloc] init];
-    for (NSDictionary *podcastDict in results) {
-      Podcast *podcast = [[Podcast alloc] initWithDictionary:podcastDict];
-      [podcasts addObject:podcast];
-    }
-    completionBlock(podcasts, nil);
+NSError *error;
+NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+  if (!jsonDict) {
+        completionBlock(nil, error);
+} else {
+  NSArray *results = jsonDict[@"results"];
+  NSMutableArray *podcasts = [[NSMutableArray alloc] init];
+  for (NSDictionary *podcastDict in results) {
+    Podcast *podcast = [[Podcast alloc] initWithDictionary:podcastDict];
+    [podcasts addObject:podcast];
   }
+  completionBlock(podcasts, nil);
+}
 ```
 
 ## Making Network calls in Objective-C with NSURLSession 
