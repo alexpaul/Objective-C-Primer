@@ -306,7 +306,7 @@ The header file is interface (template) for the methods, initializers of the cla
 
 The implementations details and method body logic are implemented in the .m file.  
 
-#### Header file 
+#### Header file (.h Objective-C file extension) 
 ```objective-c 
 @interface User : NSObject
 
@@ -323,7 +323,7 @@ The implementations details and method body logic are implemented in the .m file
 @end
 ```
 
-#### Implementation file 
+#### Implementation file (.m Objective-C file extension)
 ```objective-c 
 @implementation User
 
