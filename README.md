@@ -386,7 +386,11 @@ user.username = mutatingString;
 // output: Current logged user is @randomUser
 ```
 
-## Readiing Resource 
+## Next Steps
+
+Now that you have some Objective-C language specifics take a look at the Networking sample project in this repo. It uses NSURLSession to query the Apple Search API for Podcasts. [Project Link](https://github.com/alexpaul/Objective-C-Primer/tree/master/NetworkAPIExample) 
+
+## Reading Resources
 
 [Apple - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1)   
 [Apple - Swift Programming Language](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)    
