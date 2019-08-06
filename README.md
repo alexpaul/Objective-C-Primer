@@ -257,6 +257,24 @@ switch (networkError) {
 // Bad Status Code
 ```
 
+## C structure 
+
+```objective-c 
+typedef struct {
+  CGFloat latitude;
+  CGFloat longitude;
+} Coordinate;
+
+
+ Coordinate coordinate;
+coordinate.latitude = 40.6;
+coordinate.longitude = 73.345;
+
+NSLog(@"coordinate is %0.2f, %0.2f", coordinate.latitude, coordinate.longitude);
+
+// coordinate is 40.60, 73.34
+```
+
 ## Readiing Resource 
 
 [Apple - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1)   
