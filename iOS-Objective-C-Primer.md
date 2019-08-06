@@ -85,3 +85,39 @@ The code within the @interface block in the ViewController.m implementation file
 
 @end
 ```
+
+## Model
+
+#### Podcast.h 
+
+```objective-c 
+@interface Podcast : NSObject
+
+@property(nonatomic) NSNumber *collectionId;
+@property(copy) NSString *artistName;
+@property(copy) NSString *collectionName;
+@property(copy) NSString *artworkUrl600; 
+
+- (id)init:(NSDictionary *)dict; 
+
+@end
+```
+
+#### Podcast.m 
+
+```objective-c 
+#import <Foundation/Foundation.h>
+#import "Podcast.h"
+
+@implementation Podcast
+
+- (id)init:(NSDictionary *)dict {
+  self.collectionId = dict[@"collectionId"];
+  self.artistName = dict[@"artistName"];
+  self.collectionName = dict[@"collectionName"];
+  self.artworkUrl600 = dict[@"artworkUrl600"];
+  return self;
+}
+
+@end
+```
