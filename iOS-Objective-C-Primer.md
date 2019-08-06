@@ -23,7 +23,7 @@ NSJSONSerialization class is used to parse JSON objects in Objective-C. At the t
 ## Making Network calls in Objective-C with NSURLSession 
 
 ```objective-c 
-  NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
   // code here
   // see API Client below or the complete NetworkAPIExample Xcode project for complete implementation
 }
