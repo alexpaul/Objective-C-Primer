@@ -279,7 +279,7 @@ NSLog(@"coordinate is %0.2f, %0.2f", coordinate.latitude, coordinate.longitude);
 
 ## Classes 
 
-As opposed to Swift in Objective-C one file does not hold the full class implementation. A full class in Objective-C are separated into two files, a header file (.m extension) and an implementation file (.h extension). 
+As opposed to Swift in Objective-C one file does not hold the full class (Model) implementation. A full class in Objective-C are separated into two files, a header file (.m extension) and an implementation file (.h extension). 
 
 The header file is interface (template) for the methods, initializers of the class. The body of the methods are not implemented in the interface file. 
 
