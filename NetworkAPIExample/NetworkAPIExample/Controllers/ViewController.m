@@ -10,8 +10,10 @@
 #import "AppleSearchAPI.h"
 #import "Podcast.h"
 
-@interface ViewController ()
-@property AppleSearchAPI *apiClient; // in this @interface block apiClient is private (encapsulation)
+@interface ViewController () <UITableViewDataSource>
+@property(nonatomic) AppleSearchAPI *apiClient; // in this @interface block apiClient is private (encapsulation)
+@property(nonatomic) NSArray *podcasts;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation ViewController
@@ -20,7 +22,8 @@
   [super viewDidLoad];
   [self initializeProperites];
   [self searchPodcast];
-} 
+  self.tableView.dataSource = self;
+}
 
 - (void) initializeProperites {
   // the _apiClient property needs to be allocated and initialized or using it will cause
@@ -42,8 +45,25 @@
       for (Podcast *podcast in podcasts) {
         NSLog(@"%@", podcast.collectionName);
       }
+      self.podcasts = podcasts;
+      
+      dispatch_async(dispatch_get_main_queue(), ^{
+        [self.tableView reloadData];
+      });
     }
   }];
+}
+
+#pragma mark: UITableView Datasource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  return _podcasts.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PodcastCell" forIndexPath:indexPath];
+  Podcast *podcast = self.podcasts[indexPath.row];
+  cell.textLabel.text = podcast.collectionName;
+  return cell;
 }
 
 @end
