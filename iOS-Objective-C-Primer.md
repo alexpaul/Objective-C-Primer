@@ -120,6 +120,8 @@ NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:r
 #### Declaring conformance to a Protocol 
 ```objective-c 
 @interface ViewController () <UITableViewDataSource>
+// private types
+@end 
 ```
 
 ## ViewController
