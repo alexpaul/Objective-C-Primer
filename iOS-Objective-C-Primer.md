@@ -124,6 +124,15 @@ NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:r
 @end 
 ```
 
+## Using GCD 
+
+#### Dispatch to the Main Thread
+```objective-c 
+dispatch_async(dispatch_get_main_queue(), ^{
+  [self.tableView reloadData];
+});
+```
+
 ## ViewController
 
 #### ViewController.h
