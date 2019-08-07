@@ -434,7 +434,8 @@ Now that you have some Objective-C language specifics take a look at the Network
 
 [Apple - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1)   
 [Apple - Swift Programming Language](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)    
-[Apple - Language Interoperability](https://developer.apple.com/documentation/swift/cocoa_design_patterns)
+[Apple - Language Interoperability](https://developer.apple.com/documentation/swift/cocoa_design_patterns)   
+[Apple - Adopting Modern Objective-C](https://developer.apple.com/library/archive/releasenotes/ObjectiveC/ModernizationObjC/AdoptingModernObjective-C/AdoptingModernObjective-C.html)   
 [Apple - Conventions](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Conventions/Conventions.html)   
 [Ray Wenderlich - Objective-C Style Guide](https://github.com/raywenderlich/objective-c-style-guide)   
 [Google - Objective-C Style Guide](http://google.github.io/styleguide/objcguide.html)   
