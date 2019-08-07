@@ -428,7 +428,7 @@ user.username = mutatingString;
 
 ## Next Steps
 
-Now that you have some Objective-C language specifics take a look at the Networking sample project in this repo. It uses NSURLSession to query the Apple Search API for Podcasts. [Project Link](https://github.com/alexpaul/Objective-C-Primer/tree/master/NetworkAPIExample) 
+Now that you have some Objective-C language fundamentals covered take a look at the Networking sample Xcode project in this repo. It uses NSURLSession along with NSJSONSerialization to query the Apple Search API for Podcasts. [Project Link](https://github.com/alexpaul/Objective-C-Primer/tree/master/NetworkAPIExample) 
 
 ## Reading Resources
 
