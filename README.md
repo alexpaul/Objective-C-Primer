@@ -430,6 +430,10 @@ user.username = mutatingString;
 
 Now that you have some Objective-C language fundamentals covered take a look at the Networking sample Xcode project in this repo. It uses NSURLSession along with NSJSONSerialization to query the Apple Search API for Podcasts. [Project Link](https://github.com/alexpaul/Objective-C-Primer/tree/master/NetworkAPIExample) 
 
+Along the way to improving your iOS develeopment with Objective-C use this [refresher](https://github.com/alexpaul/Objective-C-Primer/blob/master/iOS-Objective-C-Primer.md) for iOS specifics. 
+
+After you've gone through this repo go on to build your own Objective-C iOS project to improve on your skills and comfort with the language. :-] Happy Coding!!!!
+
 ## Reading Resources
 
 [Apple - Programming with Objective-C](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210-CH1-SW1)   
