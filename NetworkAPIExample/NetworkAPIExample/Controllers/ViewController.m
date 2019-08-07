@@ -11,9 +11,9 @@
 #import "Podcast.h"
 
 @interface ViewController () <UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic) AppleSearchAPI *apiClient; // in this @interface block apiClient is private (encapsulation)
 @property(nonatomic) NSArray *podcasts;
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation ViewController

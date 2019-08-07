@@ -14,6 +14,6 @@
 @property(copy) NSString *collectionName;
 @property(copy) NSString *artworkUrl600; 
 
-- (id)initWithDictionary:(NSDictionary *)dict; 
+- (instancetype)initWithDictionary:(NSDictionary *)dict; 
 
 @end

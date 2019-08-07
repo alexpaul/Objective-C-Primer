@@ -11,7 +11,7 @@
 
 @implementation Podcast
 
-- (id)initWithDictionary:(NSDictionary *)dict {
+- (instancetype)initWithDictionary:(NSDictionary *)dict {
   self.collectionId = dict[@"collectionId"];
   self.artistName = dict[@"artistName"];
   self.collectionName = dict[@"collectionName"];
