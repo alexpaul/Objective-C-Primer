@@ -2,7 +2,7 @@
 
 1. [Objective-C Fundamentals Primer for Swift Developers](#objective-c-fundamenatals)
 2. [Default Commmand Line Application in Objective-C](https://github.com/alexpaul/Objective-C-Primer/tree/master/StarterProject)
-3. [Default iOS Project in Objective-C]
+3. [Default iOS Project in Objective-C](https://github.com/alexpaul/Objective-C-Primer/tree/master/iOSObjectiveCStarterProject)
 4. [iOS Objective-C Primer]
 5. [iOS Networking App in Objective-C - Using NSURLSession and NSJSONSerialization]
 
