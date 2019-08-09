@@ -73,8 +73,7 @@
     cell = [tableView dequeueReusableCellWithIdentifier:@"PodcastCell"];
   }
   Podcast *podcast = self.podcasts[indexPath.row];
-  cell.collectionNameLabel.text = podcast.collectionName;
-  cell.artistNameLabel.text = podcast.artistName; 
+  [cell configureCellWithPodcast:podcast];
   return cell;
 }
 

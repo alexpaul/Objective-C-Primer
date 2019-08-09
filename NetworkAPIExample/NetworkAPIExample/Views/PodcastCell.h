@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Podcast.h"
 
 @interface PodcastCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *podcastImage;
-@property (weak, nonatomic) IBOutlet UILabel *collectionNameLabel;
-@property (weak, nonatomic) IBOutlet UILabel *artistNameLabel;
+- (void)configureCellWithPodcast: (Podcast *)podcast;
 
 @end

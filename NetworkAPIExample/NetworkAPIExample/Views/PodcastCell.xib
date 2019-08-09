@@ -53,9 +53,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="artistNameLabel" destination="ey1-YG-t83" id="ULq-Y6-EP7"/>
-                <outlet property="collectionNameLabel" destination="Rbf-Sh-UM0" id="vdq-f5-4IB"/>
-                <outlet property="podcastImage" destination="vki-bW-LWB" id="s1g-ME-fsj"/>
+                <outlet property="artistNameLabel" destination="ey1-YG-t83" id="FlW-Uz-WzO"/>
+                <outlet property="collectionNameLabel" destination="Rbf-Sh-UM0" id="2Lb-qb-hei"/>
+                <outlet property="podcastImage" destination="vki-bW-LWB" id="3L6-dk-mx8"/>
             </connections>
             <point key="canvasLocation" x="70.28985507246378" y="56.919642857142854"/>
         </tableViewCell>

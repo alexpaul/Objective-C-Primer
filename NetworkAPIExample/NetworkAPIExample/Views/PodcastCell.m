@@ -8,6 +8,17 @@
 
 #import "PodcastCell.h"
 
+@interface PodcastCell ()
+@property (weak, nonatomic) IBOutlet UIImageView *podcastImage;
+@property (weak, nonatomic) IBOutlet UILabel *collectionNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *artistNameLabel;
+@end
+
 @implementation PodcastCell
+
+- (void)configureCellWithPodcast: (Podcast *)podcast {
+  self.collectionNameLabel.text = podcast.collectionName;
+  self.artistNameLabel.text = podcast.artistName;
+}
 
 @end
