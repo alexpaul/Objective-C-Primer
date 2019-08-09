@@ -8,6 +8,6 @@
 
 @interface AppleSearchAPI : NSObject
 
-- (void)searchPodcast: (void (^)(NSArray *, NSError *))completionBlock;
+- (void)searchPodcast: (NSString *)keyword :(void (^)(NSArray *, NSError *))completionBlock;
 
 @end

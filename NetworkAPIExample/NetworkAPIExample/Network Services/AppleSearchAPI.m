@@ -12,8 +12,8 @@
 
 @implementation AppleSearchAPI
 
-- (void)searchPodcast: (void (^) (NSArray *, NSError *))completionBlock {
-  NSString *endpointURL = @"https://itunes.apple.com/search?media=podcast&limit=200&term=swift";
+- (void)searchPodcast: (NSString *)keyword :(void (^)(NSArray *, NSError *))completionBlock {
+  NSString *endpointURL = [NSString stringWithFormat:@"https://itunes.apple.com/search?media=podcast&limit=200&term=%@", keyword];
   NSURL *url = [[NSURL alloc] initWithString:endpointURL];
   NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
   

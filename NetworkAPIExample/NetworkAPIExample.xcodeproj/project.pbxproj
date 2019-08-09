@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5708B0E822FCAEB0002922D8 /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5708B0E722FCAEB0002922D8 /* PodcastCell.xib */; };
+		5708B0E922FCC29E002922D8 /* PodcastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5708B0E422FCAE0E002922D8 /* PodcastCell.m */; };
 		570A588022F9ECCC0052ACE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 570A587F22F9ECCC0052ACE4 /* AppDelegate.m */; };
 		570A588322F9ECCC0052ACE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 570A588222F9ECCC0052ACE4 /* ViewController.m */; };
 		570A588622F9ECCC0052ACE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570A588422F9ECCC0052ACE4 /* Main.storyboard */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5708B0E322FCAE0E002922D8 /* PodcastCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodcastCell.h; sourceTree = "<group>"; };
+		5708B0E422FCAE0E002922D8 /* PodcastCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodcastCell.m; sourceTree = "<group>"; };
+		5708B0E722FCAEB0002922D8 /* PodcastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
 		570A587B22F9ECCC0052ACE4 /* NetworkAPIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkAPIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		570A587E22F9ECCC0052ACE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		570A587F22F9ECCC0052ACE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +50,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5708B0E622FCAE1A002922D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5708B0E322FCAE0E002922D8 /* PodcastCell.h */,
+				5708B0E422FCAE0E002922D8 /* PodcastCell.m */,
+				5708B0E722FCAEB0002922D8 /* PodcastCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		570A587222F9ECCB0052ACE4 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +81,7 @@
 			children = (
 				579E60CC22FA0B4A00D2C799 /* Network Services */,
 				579E60D022FA0B9400D2C799 /* Models */,
+				5708B0E622FCAE1A002922D8 /* Views */,
 				579E60CB22FA0B3B00D2C799 /* Controllers */,
 				579E60CA22FA0B1900D2C799 /* Supporting Files */,
 				570A588C22F9ECD10052ACE4 /* Info.plist */,
@@ -172,6 +188,7 @@
 			files = (
 				570A588B22F9ECD10052ACE4 /* LaunchScreen.storyboard in Resources */,
 				570A588822F9ECD10052ACE4 /* Assets.xcassets in Resources */,
+				5708B0E822FCAEB0002922D8 /* PodcastCell.xib in Resources */,
 				570A588622F9ECCC0052ACE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +202,7 @@
 			files = (
 				579E60CF22FA0B8F00D2C799 /* Podcast.m in Sources */,
 				570A588322F9ECCC0052ACE4 /* ViewController.m in Sources */,
+				5708B0E922FCC29E002922D8 /* PodcastCell.m in Sources */,
 				570A58B822F9F0520052ACE4 /* AppleSearchAPI.m in Sources */,
 				570A588E22F9ECD10052ACE4 /* main.m in Sources */,
 				570A588022F9ECCC0052ACE4 /* AppDelegate.m in Sources */,

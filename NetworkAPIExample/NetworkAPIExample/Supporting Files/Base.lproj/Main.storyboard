@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AYk-X7-cdy">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PodcastCell" id="Z9P-BS-lzl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Z9P-BS-lzl">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z9P-BS-lzl" id="Aji-wF-k4T">
@@ -32,17 +32,28 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Kg7-1A-Vwa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PtD-6f-0R9"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="AYk-X7-cdy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JaV-kM-PKT"/>
-                            <constraint firstItem="AYk-X7-cdy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Njw-1Y-gYJ"/>
-                            <constraint firstItem="AYk-X7-cdy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZEI-Li-QzR"/>
-                            <constraint firstAttribute="bottom" secondItem="AYk-X7-cdy" secondAttribute="bottom" id="c2p-gO-X1E"/>
+                            <constraint firstItem="Kg7-1A-Vwa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8mF-Id-ifu"/>
+                            <constraint firstItem="AYk-X7-cdy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9r0-r8-h1v"/>
+                            <constraint firstItem="Kg7-1A-Vwa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AYD-8Y-GXl"/>
+                            <constraint firstItem="Kg7-1A-Vwa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wuz-22-xDj"/>
+                            <constraint firstItem="AYk-X7-cdy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YNZ-uX-rNP"/>
+                            <constraint firstAttribute="bottom" secondItem="AYk-X7-cdy" secondAttribute="bottom" id="fyd-jv-TTg"/>
+                            <constraint firstItem="AYk-X7-cdy" firstAttribute="top" secondItem="Kg7-1A-Vwa" secondAttribute="bottom" id="px0-HP-UTD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="Kg7-1A-Vwa" id="6VE-M3-q1e"/>
                         <outlet property="tableView" destination="AYk-X7-cdy" id="lV7-ox-D5e"/>
                     </connections>
                 </viewController>
