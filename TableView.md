@@ -3,6 +3,8 @@
 
 ## ViewController.h 
 
+In the header file we conform to the `UITableViewDataSource` protocol. 
+
 ```objective-c 
 #import <UIKit/UIKit.h>
 
@@ -13,6 +15,7 @@
 
 ## ViewController.m 
 
+In the implementation file we implement the required (2) methods of the `UITableViewDataSource`. 
 
 ```objective-c 
 #import "ViewController.h"
@@ -20,7 +23,7 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic) NSMutableArray *names;
+@property (nonatomic) NSMutableArray *names; // names will be the data for the table view
 @end
 
 @implementation ViewController
