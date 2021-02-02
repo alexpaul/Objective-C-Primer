@@ -238,6 +238,42 @@ NSLog(@"Modified string is %@", resultString);
 // Rachel, hope you're enjoying all the [] bracket syntax in obj-c 😃
 ```
 
+#### Objective-C Functions with Multiple Parameters 
+
+Interface file. 
+
+```objective-c 
+@interface Person: NSObject 
+- (void)contactAddress:(NSString *)address andPhoneNumber:(NSString *)phoneNumber;
+@end 
+```
+
+Implementation file. 
+
+```objective-c 
+#import "Person.h"
+
+@implementation Person: NSObject 
+- (void)contactAddress:(NSString *)address andPhoneNumber:(NSString *)phoneNumber {
+  NSLog(@"%@ address is %@ and phone number is %@", self.name, address, phoneNumber);
+}
+@end 
+```
+
+Test class. 
+
+```objective-c 
+Person *person = [[Person alloc] init];
+person.name = @"Bob";
+
+NSString *address = @"580 Broadway, New York";
+NSString *phoneNumber = @"2127683422";
+
+[person contactAddress:address andPhoneNumber:phoneNumber];
+// Bob address is 580 Broadway, New York and phone number is 2127683422
+```
+
+
 #### Sending messages to a nil Object (does NOT crash in Objective-C which leads to logic errors and debugging time)  
 
 ```objective-c 
@@ -272,7 +308,7 @@ let result = closureExample(num1: 10, num2: 5) { $0 * $1 }
 print(result) // 50
 ```
 
-#### Blocks in Objective-C is similkart to Closures in Swift
+#### Blocks in Objective-C is similar to Closures in Swift
 
 This Block does not take any parameters and does not return a value. 
 
