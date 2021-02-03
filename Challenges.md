@@ -8,5 +8,5 @@
 
 ***
 
-#### 3. Define a class caleed `XYPoint` that will hold a Cartesian coordinate `(x, y)`, where `x` and `y` are integers. Define methods ot individually set `` and `` coordinates of a point and retrieve their values. Write an Objective-C program to implement your new class and test it. 
+#### 3. Define a class caleed `XYPoint` that will hold a Cartesian coordinate `(x, y)`, where `x` and `y` are integers. Define methods to individually set `` and `` coordinates of a point and retrieve their values. Write an Objective-C program to implement your new class and test it. 
 
