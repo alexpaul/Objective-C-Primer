@@ -160,10 +160,23 @@ int main(int argc, const char * argv[]) {
 
 ***
 
-#### 4. Write a program that converts 36° from degrees Fahrenheit (F) to degrees Celcius (C) using the following formula: 
+#### 4. Write a C-style function that converts a given temperature in Fahrenheit (F) to degrees Celcius (C) using the following formula: 
 ``` C = (F - 32) / 1.8 ```
 
+```Sample output```
+```36° Fahrenheit is 2° Celcius.```
+
 ```objective-c 
+
+// declare C-style function here 
+// code here
+
+// example of a C-style function
+/*
+int add(int nun1, int num2) {
+  return num1 + num2; 
+}*/
+
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
     // code here
@@ -171,4 +184,23 @@ int main(int argc, const char * argv[]) {
   return 0;
 }
 ```
+
+<details>
+  <summary>Solution</summary> 
+  
+```objective-c 
+int convert(int fahrenheit) {
+  return (fahrenheit - 32) / 1.8;
+}
+
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    int celcius = convert(36);
+    NSLog(@"36° Fahrenheit is %i° Celcius.", celcius); // 36° Fahrenheit is 2° Celcius
+  }
+  return 0;
+}
+```
+
+</details> 
 
