@@ -229,6 +229,14 @@ NSNumber *phoneNumber = [NSNumber numberWithLong: 9173451212];
 NSLog(@"The phone number is %@", phoneNumber); // 9173451212
 ```
 
+#### Some other number types in Objective-C 
+
+* `NSInteger`
+* `NSUInteger` 
+* `NSDecimal` 
+* `NSDecimalNumber`
+* `NSNumberFormatter`
+
 
 ## Functions 
 
