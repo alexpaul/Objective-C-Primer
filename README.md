@@ -253,7 +253,7 @@ NSLog(@"result of adding numbers is: %d", result); // format specifier for int i
 // result of adding numbers is: 9
 ```
 
-#### Objective-C Functions 
+#### Objective-C Methods (Functions) 
 
 Here we have an **@interface** declaration which acts as a template (later we will separate the @interface file in a .h file). Also we have an **@implementation** declaration that defines the function body (also we will be separating the @implementation file into a .m file)
 
@@ -277,6 +277,19 @@ NSString *resultString = [classInstance greeting:@"Rachel"];
 NSLog(@"Modified string is %@", resultString);
 
 // Rachel, hope you're enjoying all the [] bracket syntax in obj-c 😃
+```
+#### Instance and Class methods in Objective-C 
+
+An **instance method** is denoted with a `-(Return Type)` prefix. 
+
+```objective-c 
+- (int)addNumber: (int)number1 toExistingNumber: (int) numberTwo; 
+```
+
+A **class method** is denoted with a `+(Return Type)` prefix. 
+
+```objective-c 
++ (void)describePerson; 
 ```
 
 #### Objective-C Functions with Multiple Parameters 
