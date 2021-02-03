@@ -11,6 +11,21 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
+<details>
+  <summary>Solution</summary> 
+  
+```objective-c 
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    int result = 87 - 15;
+    NSLog(@"The result of subtracting 15 from 87 is %i", result);
+  }
+  return 0;
+}
+```
+
+</details> 
+
 ***
 
 #### 2. Create an object e.g `Car` and write five actions you do on that object. 
