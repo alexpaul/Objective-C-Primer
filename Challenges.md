@@ -287,4 +287,100 @@ int main(int argc, const char * argv[]) {
 
 ***
 
+## Question 7 
+Write a class called `GraphicObject` with the following properties: `fillColor`, `filled`, `lineColor`, `width` and `height`. Write a class called `Rectangle` that inhertis from the `GraphicObject` class. Implement and test the following methods `area` and `perimeter` on the `Rectangle` class. 
+
+Expected input for the Rectangle class: 
+`width: 100`
+`height: 40`
+
+Expected output: 
+`Rectangle area is 4000 and the perimeter is 280`
+
+<details>
+  <summary>Solution</summary> 
+
+GraphicObject.h 
+```objective-c 
+@interface GraphicObject : NSObject
+
+{
+  int fillColor; // 32-bit color
+  BOOL filled; // is the object filled?
+  int lineColor; // 32-bit line color
+  int width; // width of the object
+  int height; // height of the object
+}
+
+@property int fillColor, lineColor, width, height; 
+@property BOOL filled;
+
+@end
+```
+
+GraphicObject.m
+```objective-c 
+#import <Foundation/Foundation.h>
+#import "GraphicObject.h"
+
+@implementation GraphicObject
+
+@synthesize fillColor, filled, lineColor, width, height; 
+
+@end
+```
+
+Rectangle.h
+```objective-c 
+#import "GraphicObject.h"
+
+@interface Rectangle : GraphicObject
+
+- (int)perimeter;
+- (int)area;
+@end
+```
+
+Rectangle.m
+```objective-c 
+#import <Foundation/Foundation.h>
+#import "Rectangle.h"
+
+@implementation Rectangle
+
+- (int)perimeter {
+  return (width * 2) + (height * 2);
+}
+
+- (int)area {
+  return width * height;
+}
+@end
+```
+
+main.m
+```objective-c 
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    Rectangle *rect = [[Rectangle alloc] init];
+    [rect setFillColor: 12];
+    
+    NSLog(@"rect fill color is %i", rect.fillColor);
+    
+    [rect setWidth: 100];
+    [rect setHeight: 40];
+    
+    int area = [rect area];
+    int perimeter = [rect perimeter];
+    
+    NSLog(@"Rectangle area is %i and the perimeter is %i", area, perimeter);
+    // Rectangle area is 4000 and the perimeter is 280
+  }
+  return 0;
+}
+```
+</details> 
+
+***
+
 
