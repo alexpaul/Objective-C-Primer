@@ -197,6 +197,39 @@ for (NSString *pursuitClass in pursuitClasses) {
 // This is the web class
 ```
 
+## Number values in Objective-C 
+
+| Type | Storage Size | Value range |
+|:------:|:--------:|:---------:|
+| char | 1 byte | -128 to 127 or 0 to 255 |  
+| unsigned char | 1 byte | 0 to 255 |  
+| signed char | 1 byte | -128 to 127 |  
+| int | 2 or 4 bytes | -32,768 to 32,767 or -2,147,483,648 to 2,147,483,647 |  
+| unsigned int | 2 or 4 bytes | 0 to 65,535 or 0 to 4,294,967,295 |  
+| short | 2 bytes | -32,768 to 32,767 |  
+| unsigned short | 2 bytes | 0 to 65,535 |  
+| long | 4 bytes | -2,147,483,648 to 2,147,483,647 |  
+| unsigned long | 4 bytes | 0 to 4,294,967,295 |  
+
+#### Returning the maximum or minimum value of a scalar type 
+
+```objective-c 
+NSLog(@"INT_MAX is %d", INT_MAX); // 2147483647
+NSLog(@"INT_MIN is %d", INT_MIN); // -2147483648
+```
+
+#### `NSNumber`
+
+> An object wrapper for primitive scalar numeric values.
+
+Creating a `NSNumber` from a `long`
+
+```objective-c 
+NSNumber *phoneNumber = [NSNumber numberWithLong: 9173451212];
+NSLog(@"The phone number is %@", phoneNumber); // 9173451212
+```
+
+
 ## Functions 
 
 #### C-Style Functions
