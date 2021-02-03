@@ -85,7 +85,78 @@ Car *car = [[Car alloc] init];
 
 ***
 
-#### 3. Define a class caleed `XYPoint` that will hold a Cartesian coordinate `(x, y)`, where `x` and `y` are integers. Define methods to individually set `` and `` coordinates of a point and retrieve their values. Write an Objective-C program to implement your new class and test it. 
+#### 3. Define a class caleed `XYPoint` that will hold a Cartesian coordinate `(x, y)`, where `x` and `y` are integers. Define methods to individually set `x` and `y` coordinates of a point and retrieve their values. Write an Objective-C program to implement your new class and test it. 
+
+Example test description of your `XYPoint`
+`The point is at (x: 5, y: 10)`
+
+<details>
+  <summary>Solution</summary> 
+ 
+XYPoint.h 
+```objective-c 
+@interface XYPoint : NSObject
+- (int)getX;
+- (int)getY;
+- (void)setXWithValue: (int)value;
+- (void)setYWithValue: (int)value;
+- (void)info;
+@end
+```
+
+XYPoint.m
+```objective-c 
+#import <Foundation/Foundation.h>
+#import "XYPoint.h"
+
+// by using an internal @interface we create private properties
+@interface XYPoint()
+@property int x;
+@property int y;
+@end
+
+@implementation XYPoint
+
+- (int)getX {
+  return  self.x;
+}
+
+- (int)getY {
+  return self.y;
+}
+
+- (void)setXWithValue: (int)value {
+  self.x = value;
+}
+
+- (void)setYWithValue: (int)value {
+  self.y = value;
+}
+
+- (void)info {
+  NSLog(@"The point is at (x: %i, y: %i)", self.x, self.y);
+}
+
+@end
+```
+
+main.m
+```objective-c 
+#import <Foundation/Foundation.h>
+#import "XYPoint.h"
+
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    XYPoint *point = [[XYPoint alloc] init];
+    [point setXWithValue:5];
+    [point setYWithValue:10];
+    [point info]; // The point is at (x: 5, y: 10)
+  }
+  return 0;
+}
+```
+
+</details> 
 
 ***
 
