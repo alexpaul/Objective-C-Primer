@@ -290,12 +290,12 @@ int main(int argc, const char * argv[]) {
 ## Question 7 
 Write a class called `GraphicObject` with the following properties: `fillColor`, `filled`, `lineColor`, `width` and `height`. Write a class called `Rectangle` that inhertis from the `GraphicObject` class. Implement and test the following methods `area` and `perimeter` on the `Rectangle` class. 
 
-Expected input for the Rectangle class: 
-`width: 100`
-`height: 40`
+Expected input for the Rectangle class:   
+`width: 100`  
+`height: 40`  
 
 Expected output: 
-`Rectangle area is 4000 and the perimeter is 280`
+`Rectangle area is 4000 and the perimeter is 280`  
 
 <details>
   <summary>Solution</summary> 
