@@ -28,7 +28,7 @@ int main(int argc, const char * argv[]) {
 
 ***
 
-#### 2. Create an object e.g `Car` and write five actions you do on that object. 
+#### 2. Create an object you use e.g  a `Car` and write five actions (methods) you perform on that object. 
 
 <details>
   <summary>Solution</summary> 
