@@ -163,7 +163,7 @@ int main(int argc, const char * argv[]) {
 #### 4. Write a C-style function that converts a given temperature in Fahrenheit (F) to degrees Celcius (C) using the following formula: 
 ``` C = (F - 32) / 1.8 ```
 
-```Sample output```
+```Sample output```   
 ```36° Fahrenheit is 2° Celcius.```
 
 ```objective-c 
