@@ -272,7 +272,7 @@ int main(int argc, const char * argv[]) {
   @autoreleasepool {
     int number = 15;
     int divisor = 3;
-    bool result = isDivible(number, divisor);
+    BOOL result = isDivible(number, divisor);
     if (result) {
       NSLog(@"%i is divisible by %i.", number, divisor);
     } else {
