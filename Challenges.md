@@ -26,9 +26,9 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
-Topics: basic variables
-
 </details> 
+
+Topics: basic variables
 
 ***
 
@@ -166,6 +166,8 @@ int main(int argc, const char * argv[]) {
 
 </details> 
 
+Topics: basic variables, class, methods 
+
 ***
 
 ## Question 4
@@ -249,9 +251,9 @@ int main(int argc, const char * argv[]) {
 
 </details> 
 
-***
-
 Topics: basic variables, loops 
+
+***
 
 ## Question 6 
 
