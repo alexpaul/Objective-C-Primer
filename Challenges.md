@@ -245,4 +245,46 @@ int main(int argc, const char * argv[]) {
 
 ***
 
+## Question 6 
+
+Write a function (C-style) that takes two integers and returns a boolean value indicating whether or NOT the first number is divisible by the second number. Use an if/else statement to print an appropriate message. 
+
+```objective-c
+// code function here
+
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    // code solution here
+  }
+  return 0;
+}
+```
+
+<details>
+  <summary>Solution</summary> 
+  
+```objective-c 
+bool isDivible(int number, int divisor) {
+  return number % divisor == 0;
+}
+
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    int number = 15;
+    int divisor = 3;
+    bool result = isDivible(number, divisor);
+    if (result) {
+      NSLog(@"%i is divisible by %i.", number, divisor);
+    } else {
+      NSLog(@"%i is NOT divisible by %i.", number, divisor);
+    }
+  }
+  return 0;
+}
+```
+
+</details> 
+
+***
+
 
