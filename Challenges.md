@@ -1,6 +1,6 @@
 # Challenges 
 
-#### 1. Write a program that subtracts the value 15 from 87 and displays the result, together with an appropriate message. 
+### 1. Write a program that subtracts the value 15 from 87 and displays the result, together with an appropriate message. 
 
 ```objective-c 
 int main(int argc, const char * argv[]) {
