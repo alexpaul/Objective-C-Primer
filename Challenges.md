@@ -18,7 +18,8 @@ int main(int argc, const char * argv[]) {
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
     int result = 87 - 15;
-    NSLog(@"The result of subtracting 15 from 87 is %i", result);
+    NSLog(@"The result of subtracting 15 from 87 is %i.", result);
+    // The result of subtracting 15 from 87 is 72.
   }
   return 0;
 }
