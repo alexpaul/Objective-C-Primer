@@ -238,7 +238,7 @@ NSLog(@"The phone number is %@", phoneNumber); // 9173451212
 * `NSNumberFormatter`
 
 
-## Functions 
+## Functions and Methods
 
 #### C-Style Functions
 ```objective-c
