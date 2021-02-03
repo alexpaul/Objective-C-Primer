@@ -393,7 +393,7 @@ int main(int argc, const char * argv[]) {
 ```
 </details> 
 
-Topics: basic variables, class, methods, properties, inheitance
+Topics: basic variables, class, methods, properties, inheritance
 
 ***
 
