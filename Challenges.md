@@ -30,6 +30,59 @@ int main(int argc, const char * argv[]) {
 
 #### 2. Create an object e.g `Car` and write five actions you do on that object. 
 
+<details>
+  <summary>Solution</summary> 
+  
+Car.h 
+```objective-c 
+@interface Car : NSObject
+- (void)drive;
+- (void)brake;
+- (void)playMusic;
+- (int)currentSpeed;
+- (void)park;
+@end
+```
+
+Car.m
+```objective-c 
+#import <Foundation/Foundation.h>
+#import "Car.h"
+
+@implementation Car
+
+- (void)drive {
+  NSLog(@"Diving and enjoying the open roads."); 
+}
+
+- (void)brake {
+  // code here
+}
+
+- (void)playMusic{
+  // code here
+}
+
+- (int)currentSpeed{
+  return 0;
+}
+
+- (void)park{
+  // code here
+}
+
+@end
+```
+
+main.m
+```objective-c 
+Car *car = [[Car alloc] init];
+[car drive];
+// Diving and enjoying the open roads.
+```
+
+</details> 
+
 ***
 
 #### 3. Define a class caleed `XYPoint` that will hold a Cartesian coordinate `(x, y)`, where `x` and `y` are integers. Define methods to individually set `` and `` coordinates of a point and retrieve their values. Write an Objective-C program to implement your new class and test it. 
