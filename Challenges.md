@@ -29,7 +29,7 @@ int main(int argc, const char * argv[]) {
 
 ***
 
-#### 2. Create an object you use e.g  a `Car` and write five actions (methods) you perform on that object. 
+### 2. Create an object you use e.g  a `Car` and write five actions (methods) you perform on that object. 
 
 <details>
   <summary>Solution</summary> 
@@ -86,7 +86,7 @@ Car *car = [[Car alloc] init];
 
 ***
 
-#### 3. Define a class caleed `XYPoint` that will hold a Cartesian coordinate `(x, y)`, where `x` and `y` are integers. Define methods to individually set `x` and `y` coordinates of a point and retrieve their values. Write an Objective-C program to implement your new class and test it. 
+### 3. Define a class caleed `XYPoint` that will hold a Cartesian coordinate `(x, y)`, where `x` and `y` are integers. Define methods to individually set `x` and `y` coordinates of a point and retrieve their values. Write an Objective-C program to implement your new class and test it. 
 
 Example test description of your `XYPoint`
 `The point is at (x: 5, y: 10)`
@@ -161,7 +161,7 @@ int main(int argc, const char * argv[]) {
 
 ***
 
-#### 4. Write a C-style function that converts a given temperature in Fahrenheit (F) to degrees Celcius (C) using the following formula: 
+### 4. Write a C-style function that converts a given temperature in Fahrenheit (F) to degrees Celcius (C) using the following formula: 
 ``` C = (F - 32) / 1.8 ```
 
 ```Sample output```   
@@ -207,7 +207,7 @@ int main(int argc, const char * argv[]) {
 
 ***
 
-## 5. Write a program that calculates the sum of the digits of an integer. For example, the sum of the digits of the number 3045 is 3 + 0 + 4 + 5, or 12. 
+### 5. Write a program that calculates the sum of the digits of an integer. For example, the sum of the digits of the number 3045 is 3 + 0 + 4 + 5, or 12. 
 
 ```objective-c 
 int main(int argc, const char * argv[]) {
