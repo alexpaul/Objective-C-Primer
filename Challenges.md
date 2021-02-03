@@ -26,6 +26,8 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
+Topics: basic variables
+
 </details> 
 
 ***
@@ -85,6 +87,8 @@ Car *car = [[Car alloc] init];
 ```
 
 </details> 
+
+Topics: basic variables, class, methods 
 
 ***
 
@@ -209,6 +213,8 @@ int main(int argc, const char * argv[]) {
 
 </details> 
 
+Topics: basic variables, class, methods 
+
 ***
 
 ## Question 5
@@ -244,6 +250,8 @@ int main(int argc, const char * argv[]) {
 </details> 
 
 ***
+
+Topics: basic variables, loops 
 
 ## Question 6 
 
@@ -284,6 +292,8 @@ int main(int argc, const char * argv[]) {
 ```
 
 </details> 
+
+Topics: basic variables, functions 
 
 ***
 
@@ -380,6 +390,8 @@ int main(int argc, const char * argv[]) {
 }
 ```
 </details> 
+
+Topics: basic variables, class, methods, properties, inheitance
 
 ***
 
