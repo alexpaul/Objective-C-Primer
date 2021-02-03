@@ -39,7 +39,7 @@ Car.h
 - (void)drive;
 - (void)brake;
 - (void)playMusic;
-- (int)currentSpeed;
+- (void)activateCruiseControl;
 - (void)park;
 @end
 ```
@@ -63,8 +63,8 @@ Car.m
   // code here
 }
 
-- (int)currentSpeed{
-  return 0;
+- (void)activateCruiseControl{
+  // code here
 }
 
 - (void)park{
