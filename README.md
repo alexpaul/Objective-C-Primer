@@ -475,6 +475,30 @@ The implementations details and method body logic are implemented in the .m file
 ```
 #### [ClassExample Xcode Project](https://github.com/alexpaul/Objective-C-Primer/tree/master/ClassExample)  
 
+## Initializers 
+
+Header file 
+
+```objective-c 
+- (instancetype)initWithName: (NSString *)name; 
+```
+
+Implementation file 
+
+```objective-c 
+- (instancetype)initWithName:(NSString *)name {
+  self.name = name;
+  return self;
+}
+```
+
+Create an instance of custom object 
+
+```objective-c 
+Person *alex = [[Person alloc] initWithName:@"Alex Paul"];
+```
+
+
 ## Properties 
 
 #### readonly - property will not be allowed to change through the setter property
