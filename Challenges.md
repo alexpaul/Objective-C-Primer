@@ -207,3 +207,37 @@ int main(int argc, const char * argv[]) {
 
 ***
 
+## 5. Write a program that calculates the sum of the digits of an integer. For example, the sum of the digits of the number 3045 is 3 + 0 + 4 + 5, or 12. 
+
+```objective-c 
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    // code here
+  }
+  return 0;
+}
+```
+
+<details>
+  <summary>Solution</summary> 
+  
+```objective-c 
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    int number = 3045;
+    int sum = 0;
+    while(number > 0) {
+      sum += number % 10;
+      number /= 10;
+    }
+    NSLog(@"The sum is %i", sum); // The sum is 12
+  }
+  return 0;
+}
+```
+
+</details> 
+
+***
+
+
