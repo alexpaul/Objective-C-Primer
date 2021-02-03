@@ -160,7 +160,7 @@ int main(int argc, const char * argv[]) {
 
 ***
 
-#### 4. Write a program that converts 27° from degrees Fahrenheit (F) to degrees Celcius (C) using the following formula: 
+#### 4. Write a program that converts 36° from degrees Fahrenheit (F) to degrees Celcius (C) using the following formula: 
 ``` C = (F - 32) / 1.8 ```
 
 ```objective-c 
