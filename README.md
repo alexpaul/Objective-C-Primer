@@ -5,6 +5,7 @@
 3. [Default iOS Project in Objective-C](https://github.com/alexpaul/Objective-C-Primer/tree/master/iOSObjectiveCStarterProject)
 4. [iOS Objective-C Primer](https://github.com/alexpaul/Objective-C-Primer/blob/master/iOS-Objective-C-Primer.md)
 5. [iOS Networking App in Objective-C - Using NSURLSession and NSJSONSerialization](https://github.com/alexpaul/Objective-C-Primer/tree/master/NetworkAPIExample)
+6. [Challenges](Challenges.md)
 
 
 # Objective-C Fundamentals Primer for Swift Developers <a name="objective-c-fundamenatals"></a>
