@@ -550,6 +550,9 @@ user.username = mutatingString;
 // output: Current logged user is @randomUser
 ```
 
+1. [Stackoverflow - Property Attributes Best Practices](https://stackoverflow.com/questions/35198965/objective-c-property-attributes-best-practices)
+2. [Apple - Property Attributes](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocProperties.html)
+
 ## Next Steps
 
 Now that you have some Objective-C language fundamentals covered take a look at the Networking sample Xcode project in this repo. It uses NSURLSession along with NSJSONSerialization to query the Apple Search API for Podcasts. [Project Link](https://github.com/alexpaul/Objective-C-Primer/tree/master/NetworkAPIExample) 
