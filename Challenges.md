@@ -406,7 +406,7 @@ Using the `Recatangle` class from earlier add an initializer method according to
 - (instancetype)initWithWidth: (int) width andHeight: (int) height;
 ```
 
-Test using initializer in `main.m`
+Test using `Rectangle` initializer in `main.m`
 
 ```objective-c 
 int main(int argc, const char * argv[]) {
