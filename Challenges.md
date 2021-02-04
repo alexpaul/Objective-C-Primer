@@ -398,3 +398,64 @@ Topics: basic variables, class, methods, properties, inheritance
 ***
 
 
+## Question 8 
+
+Using the Recatangle class from earlier add an initializer method according to the following declaration and test it.   
+
+```objective-c
+- (instancetype)initWithWidth: (int) width andHeight: (int) height;
+```
+
+Test 
+
+```objective-c 
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    Rectangle *rect = [[Rectangle alloc] initWithWidth:10 andHeight:5];
+    int area = [rect area];
+    int perimeter = [rect perimeter];
+    NSLog(@"The area of the rectangle is %i and the perimeter is %i", area, perimeter);
+    // The area of the rectangle is 50 and the perimeter is 30
+  }
+  return 0;
+}
+```
+
+<details>
+  <summary>Solution</summary> 
+
+Rectangle.h 
+```objective-c 
+- (instancetype)initWithWidth: (int) width andHeight: (int) height;
+```
+
+Rectangle.m
+```objective-c 
+- (instancetype)initWithWidth: (int) width andHeight: (int) height {
+  self = [super init];
+  if (self) {
+    self.width = width; 
+    self.height = height;
+  }
+  return self;
+}
+```
+
+main.m
+```objective-c 
+int main(int argc, const char * argv[]) {
+  @autoreleasepool {
+    Rectangle *rect = [[Rectangle alloc] initWithWidth:10 andHeight:5];
+    int area = [rect area];
+    int perimeter = [rect perimeter];
+    NSLog(@"The area of the rectangle is %i and the perimeter is %i", area, perimeter);
+    // The area of the rectangle is 50 and the perimeter is 30
+  }
+  return 0;
+}
+```
+
+</details> 
+
+***
+
