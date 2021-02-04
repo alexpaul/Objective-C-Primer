@@ -400,13 +400,13 @@ Topics: basic variables, class, methods, properties, inheritance
 
 ## Question 8 
 
-Using the Recatangle class from earlier add an initializer method according to the following declaration and test it.   
+Using the `Recatangle` class from earlier add an initializer method according to the following declaration and test it.   
 
 ```objective-c
 - (instancetype)initWithWidth: (int) width andHeight: (int) height;
 ```
 
-Test 
+Test using initializer in `main.m`
 
 ```objective-c 
 int main(int argc, const char * argv[]) {
