@@ -1,6 +1,6 @@
 # Table of Contents 
 
-1. [Objective-C Fundamentals Primer for Swift Developers](#objective-c-fundamenatals)
+1. [An Introductory Objective-C Xcode Command Line Application](https://github.com/alexpaul/Objective-C-Primer/tree/master/Objective-C-Intro)
 2. [Default Commmand Line Application in Objective-C](https://github.com/alexpaul/Objective-C-Primer/tree/master/StarterProject)
 3. [Default iOS Project in Objective-C](https://github.com/alexpaul/Objective-C-Primer/tree/master/iOSObjectiveCStarterProject)
 4. [iOS Objective-C Primer](https://github.com/alexpaul/Objective-C-Primer/blob/master/iOS-Objective-C-Primer.md)
