@@ -65,6 +65,8 @@ print("Hello, World")
 
 ## Format Specifiers 
 
+Format specifiers are used as placeholder tokens to String interpolate various data types.  
+
 > %@ object such as NSString  
 > %d int, NSInteger  
 > %f float  
