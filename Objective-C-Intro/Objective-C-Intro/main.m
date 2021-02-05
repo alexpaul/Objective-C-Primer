@@ -57,6 +57,7 @@ int main(int argc, const char * argv[]) {
     
     //var programmingStacks = ["Objective-C"] // [String]()
     
+    // for-in in Swift
 //    for language in programmingStacks {
 //      print(language)
 //    }
@@ -74,3 +75,16 @@ int main(int argc, const char * argv[]) {
   }
   return 0;
 }
+
+
+// TODOs:
+/*
+ - NSMutableArray
+ - NSDictionary / NSMutableDictionary
+ - Objective-C methods (instance and class methods)
+ - Initializers
+ - Properties
+ - Inheritance
+ - Create an iOS app
+ - Create an iOS app that queries a Web API (NSJSONSerialization)
+*/
