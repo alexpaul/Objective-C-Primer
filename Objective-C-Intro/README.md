@@ -19,5 +19,6 @@ In this lesson we introduce Objective-C via a command line macOS application. We
 - [ ] Initializers
 - [ ] Properties
 - [ ] Inheritance
+- [ ] Polymorphism
 - [ ] Create an iOS app
 - [ ] Create an iOS app that queries a Web API (NSJSONSerialization)
