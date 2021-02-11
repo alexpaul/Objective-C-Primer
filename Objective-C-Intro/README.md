@@ -163,6 +163,9 @@ Fellow.h
 #import "Person.h"
 
 @interface Fellow : Person
+
+// we can add custom methods on the Fellow object here
+
 @end
 ```
 
@@ -172,6 +175,9 @@ Fellow.m
 #import "Fellow.h"
 
 @implementation Fellow
+
+// we can implement custom methods on the Fellow object here
+
 @end
 ```
 
