@@ -13,12 +13,12 @@ In this lesson we introduce Objective-C via a command line macOS application. We
 - [x] Using the `for-in` loop 
 - [x] Testing for equality on strings 
 - [x] Creating a custom object via a header and implementation file e.g `Person.h` and `Person.m`
-- [ ] NSMutableArray
-- [ ] NSDictionary / NSMutableDictionary
-- [ ] Objective-C methods (instance and class methods)
-- [ ] Initializers
-- [ ] Properties
-- [ ] Inheritance
+- [x] NSMutableArray
+- [x] NSDictionary / NSMutableDictionary
+- [x] Objective-C methods (instance and class methods)
+- [x] Initializers
+- [x] Properties
+- [x] Inheritance
 - [ ] Polymorphism
 - [ ] Create an iOS app
 - [ ] Create an iOS app that queries a Web API (NSJSONSerialization)
