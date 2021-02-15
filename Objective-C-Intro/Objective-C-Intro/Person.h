@@ -7,7 +7,21 @@
 
 @interface Person : NSObject
 
-- (void)info;
+// properties
+@property NSString *name;
 
+//let name: String
+
+// initializers
+- (instancetype) initWithName: (NSString *) name;
+
+// methods
+
+// class methods
++ (NSArray *)allPeople;
+
+
+// instance method
+- (void)info;
 
 @end

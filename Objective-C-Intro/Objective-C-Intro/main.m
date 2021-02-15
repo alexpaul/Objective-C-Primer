@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
+#import "Fellow.h"
 
 // import Foundation
 
@@ -31,6 +32,7 @@ int main(int argc, const char * argv[]) {
     // NSString is an object that allocates
     // memory on the Heap (a place (buffer) in memory)
     NSString *name = @"Bien";
+    //let name = "Bien"
     
     // print name
     NSLog(@"The person's name is %@.", name);
@@ -68,23 +70,84 @@ int main(int argc, const char * argv[]) {
       }
     }
     
-    // create an instance of Person
-    // call info
-    Person *eric = [[Person alloc] init];
-    [eric info];
+    // NSMutableArray
+    NSMutableArray *raceTypes = [[NSMutableArray alloc] init];
+    
+    // var raceTypes = [String]()
+    // raceTypes.append("Marathon")
+    
+    [raceTypes addObject:@"Marathon"];
+    [raceTypes addObject:@"10k"];
+    [raceTypes addObject:@"Half marathon"];
+    [raceTypes addObject:@"Triathlon"];
+    
+    for (NSString *raceType in raceTypes) {
+      NSLog(@"race type is %@", raceType);
+    }
+    
+    // NSDictionary
+    NSDictionary *placesDict = @{@"New York": @"Brooklyn", @"Sweden": @"Malmo"};
+    
+    // let placesDict = ["New York": "Brooklyn", "Sweden": "Malmo"]
+    
+    for (NSString *placeKey in placesDict) {
+      NSString *placeValue = placesDict[placeKey];
+      NSLog(@"The place key is %@ and the value is %@", placeKey, placeValue);
+    }
+    
+    // NSMutableDictionary
+    NSMutableDictionary *platform = [[NSMutableDictionary alloc] init];
+    [platform setObject:@"iOS apps" forKey:@"iOS"];
+    [platform setObject:@"Android apps" forKey:@"Java"];
+
+    NSLog(@"Currently we have %lu two stacks.", (unsigned long)platform.count);
+    
+    // Objective-C methods (class methods and instance methods)
+    
+    // create an object called Person in Swift
+    // struct Person {}
+    // create two files: Person.h and Person.m
+    // Person.h declares the methods
+    // Person.m implements the methods
+    
+    // instance methods are called on instance of an object
+    Person *person = [[Person alloc] init];
+    [person info];
+    
+    // person.info();
+    
+    // Properties
+    person.name = @"John Appleseed";
+    NSLog(@"The person's name is %@", person.name);
+    
+    // class methods are called on the class itself
+    NSArray *people = [Person allPeople];
+    
+    NSLog(@"There are %lu of people", (unsigned long)people.count);
+    for (Person *person in people) {
+      NSLog(@"The person's name is %@", person.name);
+    }
+    
+    //people = nil;
+    
+    if (people.count > 0) {
+      Person *firstPerson = people[0];
+      NSLog(@"The first person is %@", firstPerson.name);
+    }
+    
+    // initializers
+    Person *tom = [[Person alloc] initWithName:@"Tom"];
+    [tom info];
+    
+    // inheritance
+    Fellow *neema = [[Fellow alloc] initWithName:@"Neema"];
+    [neema info];
+    
+    // challenge: override info to print "The fellow's name" instead
+    
+    // @sythesized
+    
+    // setter and getter methods 
   }
   return 0;
 }
-
-
-// TODOs:
-/*
- - NSMutableArray
- - NSDictionary / NSMutableDictionary
- - Objective-C methods (instance and class methods)
- - Initializers
- - Properties
- - Inheritance
- - Create an iOS app
- - Create an iOS app that queries a Web API (NSJSONSerialization)
-*/
