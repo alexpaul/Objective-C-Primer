@@ -2,6 +2,8 @@
 
 ![to do list app](https://github.com/alexpaul/To-Do-List-Objective-C-Advance/blob/main/Assets/to-do-list-app.gif)
 
+## [Video - Part 3](https://youtu.be/IJ28qjvRKo0)
+
 ## 1. Configure the app hierarchy programmatically in the `SceneDelegate.m`
 
 ```objective-c
