@@ -2,6 +2,8 @@
 
 In this lesson we introduce Objective-C via a command line macOS application. We introduce data types and syntax such as creating NSString objects, NSArray's and iteracting using the for-in loop. We also create a custom `Person` object via a header file and an implementation file. 
 
+## [Video - Part 1](https://youtu.be/2CPt99dnroQ)
+
 ## Lesson TODOs 
 
 - [x] Printing to the console 
@@ -24,6 +26,8 @@ In this lesson we introduce Objective-C via a command line macOS application. We
 - [ ] Create an iOS app that queries a Web API (NSJSONSerialization)
 
 ## Part 2 
+
+## [Video - Part 2](https://youtu.be/kCPcS5RG6p8)
 
 ## 1. NSMutableArray
 
